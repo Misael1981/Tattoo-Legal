@@ -1,0 +1,30 @@
+.home {
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./img/exemplo-home-tattoo.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: var(--gap-l);
+  text-align: start;
+
+  @media screen and (width > 920px) {
+    height: 70vh;
+  }
+
+  div {
+    margin: 0 0 var(--margin-4xl) var(--margin-l);
+    h2 {
+      max-width: 80%;
+      color: var(--color-primary);
+      font-size: var(--fonte-size-xl);
+      font-weight: 600;
+      line-height: var(--line-height);
+      padding-bottom: var(--padding-m);
+    }
+  }
+}

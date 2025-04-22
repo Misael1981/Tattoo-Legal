@@ -1,0 +1,30 @@
+.header-desktop {
+  @media screen and (width < 920px) {
+    display: none;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  nav {
+    width: 100%;
+    ul {
+      box-sizing: border-box;
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .header__logo {
+        width: 12rem;
+        height: auto;
+      }
+
+      li a {
+        text-decoration: none;
+        color: var(--color-primary);
+        font-size: var(--fonte-size-m);
+      }
+    }
+  }
+}

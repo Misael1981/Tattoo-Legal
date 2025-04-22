@@ -1,0 +1,42 @@
+.header-mobile {
+  width: 100%;
+
+  .logo__container {
+    img {
+      width: 7rem;
+      height: auto;
+      position: fixed;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .header__nav {
+    ul {
+      width: 100%;
+      background-color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      bottom: 0;
+
+      li a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--gap-m);
+        color: #f0f0f0;
+        font-size: var(--fonte-size-bm);
+        padding: var(--padding-m);
+        text-decoration: none;
+        text-align: center;
+      }
+    }
+  }
+  @media screen and (width > 920px) {
+    display: none;
+  }
+}
