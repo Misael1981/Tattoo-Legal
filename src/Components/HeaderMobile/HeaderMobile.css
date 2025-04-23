@@ -3,7 +3,7 @@
 
   .logo__container {
     img {
-      width: 7rem;
+      width: 10rem;
       height: auto;
       position: fixed;
       top: 1rem;
@@ -25,11 +25,11 @@
       li a {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         gap: var(--gap-m);
         color: #f0f0f0;
-        font-size: var(--fonte-size-bm);
+        font-size: var(--fonte-size-s);
         padding: var(--padding-m);
         text-decoration: none;
         text-align: center;

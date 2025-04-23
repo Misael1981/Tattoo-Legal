@@ -1,6 +1,6 @@
 import "./HeaderMobile.css";
 import Logo from "/images/logo_tattoo-legal.svg";
-import { FcAbout } from "react-icons/fc";
+import { RiInfoCardFill } from "react-icons/ri";
 import { GrGallery } from "react-icons/gr";
 import { FaInstagram } from "react-icons/fa";
 import { MdContactPhone } from "react-icons/md";
@@ -19,7 +19,7 @@ const HeaderMobile = () => {
         <ul>
           <li>
             <a href="#about">
-              <FcAbout size={40} />
+              <RiInfoCardFill size={30} />
               About
             </a>
           </li>
