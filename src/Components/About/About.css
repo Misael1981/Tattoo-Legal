@@ -1,0 +1,56 @@
+.about {
+  background-color: #000;
+  width: 100%;
+
+  .about__container {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (width > 1020px) {
+      flex-direction: row;
+    }
+
+    .about-description {
+      padding: var(--padding-xl);
+      color: var(--color-primary);
+
+      h2 {
+        display: inline-block;
+        font-family: var(--font-UnifrakturCook);
+        font-size: var(--fonte-size-xl);
+        margin-bottom: 8rem;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          right: 0px;
+          top: 50px;
+          width: 150px;
+          height: 60px;
+          background-image: url("../../../public/images/detalhe-titulo-laranja.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+
+      p {
+        font-size: var(--fonte-size-m);
+        padding: var(--padding-s);
+      }
+    }
+
+    .about-image {
+      width: 100%;
+      height: auto;
+
+      @media screen and (width > 1020px) {
+        flex: 1 0 50%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

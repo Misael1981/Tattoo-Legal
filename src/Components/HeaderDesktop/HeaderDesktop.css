@@ -2,7 +2,7 @@
   @media screen and (width < 920px) {
     display: none;
   }
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 

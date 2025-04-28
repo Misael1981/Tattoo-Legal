@@ -1,3 +1,4 @@
+import About from "./Components/About";
 import HeaderDesktop from "./Components/HeaderDesktop";
 import HeaderMobile from "./Components/HeaderMobile";
 import Home from "./Components/Home";
@@ -7,7 +8,10 @@ function App() {
     <>
       <HeaderMobile />
       <HeaderDesktop />
-      <Home />
+      <main>
+        <Home />
+        <About />
+      </main>
     </>
   );
 }

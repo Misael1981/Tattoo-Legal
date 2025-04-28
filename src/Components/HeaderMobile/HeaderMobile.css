@@ -5,7 +5,7 @@
     img {
       width: 10rem;
       height: auto;
-      position: fixed;
+      position: absolute;
       top: 1rem;
       left: 50%;
       transform: translateX(-50%);
@@ -22,17 +22,20 @@
       position: fixed;
       bottom: 0;
 
-      li a {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: var(--gap-m);
-        color: #f0f0f0;
-        font-size: var(--fonte-size-s);
-        padding: var(--padding-m);
-        text-decoration: none;
-        text-align: center;
+      li {
+        flex: 1 0;
+        a {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          gap: var(--gap-m);
+          color: #f0f0f0;
+          font-size: var(--fonte-size-s);
+          padding: var(--padding-m);
+          text-decoration: none;
+          text-align: center;
+        }
       }
     }
   }
